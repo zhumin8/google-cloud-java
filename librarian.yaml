@@ -3,11 +3,15 @@ sources:
   googleapis:
     # Path to your local googleapis checkout
     dir: ../../googleapis
+
+default:
+  output: .
+  java:
+    generator_jar: ./tools/gapic-generator-java.jar
+    grpc_plugin: ./tools/protoc-gen-java_grpc
+
 libraries:
   - name: secretmanager
-    # Generate into the current directory (google-cloud-java root)
-    output: .
+    output: ./java-secretmanager
     apis:
       - path: google/cloud/secretmanager/v1
-    java:
-      generator_jar: ./tools/gapic-generator-java.jar
