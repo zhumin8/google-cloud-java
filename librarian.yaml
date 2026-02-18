@@ -15,7 +15,12 @@ libraries:
     output: ./java-secretmanager
     apis:
       - path: google/cloud/secretmanager/v1
+      - path: google/cloud/secretmanager/v1beta2
   - name: vision
     output: ./java-vision
     apis:
       - path: google/cloud/vision/v1
+      - path: google/cloud/vision/v1p1beta1
+      - path: google/cloud/vision/v1p2beta1
+      - path: google/cloud/vision/v1p3beta1
+      - path: google/cloud/vision/v1p4beta1
