@@ -1,0 +1,13 @@
+language: java
+sources:
+  googleapis:
+    # Path to your local googleapis checkout
+    dir: ../../googleapis
+libraries:
+  - name: secretmanager
+    # Generate into the current directory (google-cloud-java root)
+    output: .
+    apis:
+      - path: google/cloud/secretmanager/v1
+    java:
+      generator_jar: ./tools/gapic-generator-java.jar
