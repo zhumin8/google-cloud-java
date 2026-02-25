@@ -9,6 +9,7 @@ default:
   java:
     generator_jar: ./tools/gapic-generator-java.jar
     grpc_plugin: ./tools/protoc-gen-java_grpc
+    formatter_jar: ./tools/google-java-format.jar
 
 libraries:
   - name: secretmanager
@@ -16,8 +17,19 @@ libraries:
     apis:
       - path: google/cloud/secretmanager/v1
       - path: google/cloud/secretmanager/v1beta2
+      - path: google/cloud/secrets/v1beta1
   - name: vision
     output: ./java-vision
+    keep:
+      - proto-google-cloud-vision-v1/src/main/java/com/google/cloud/vision/v1/ImageName.java
+      - google-cloud-vision/src/test/java/com/google/cloud/vision/it/ITSystemTest.java
+      - google-cloud-vision/src/test/resources/city.jpg
+      - google-cloud-vision/src/test/resources/face_no_surprise.jpg
+      - google-cloud-vision/src/test/resources/landmark.jpg
+      - google-cloud-vision/src/test/resources/logos.png
+      - google-cloud-vision/src/test/resources/puppies.jpg
+      - google-cloud-vision/src/test/resources/text.jpg
+      - google-cloud-vision/src/test/resources/wakeupcat.jpg
     apis:
       - path: google/cloud/vision/v1
       - path: google/cloud/vision/v1p1beta1
