@@ -131,14 +131,18 @@
       <groupId>org.threeten</groupId>
       <artifactId>threetenbp</artifactId>
     </dependency>
+    <!-- {x-generated-proto-dependencies-start} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-cloud-storage-v2</artifactId>
     </dependency>
+    <!-- {x-generated-proto-dependencies-end} -->
+    <!-- {x-generated-grpc-dependencies-start} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>grpc-google-cloud-storage-v2</artifactId>
     </dependency>
+    <!-- {x-generated-grpc-dependencies-end} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>gapic-google-cloud-storage-v2</artifactId>
