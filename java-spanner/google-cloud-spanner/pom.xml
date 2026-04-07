@@ -356,10 +356,12 @@
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-cloud-spanner-admin-instance-v1</artifactId>
     </dependency>
+    <!-- {x-generated-proto-dependencies-start} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-cloud-spanner-v1</artifactId>
     </dependency>
+    <!-- {x-generated-proto-dependencies-end} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-cloud-spanner-admin-database-v1</artifactId>
@@ -368,10 +370,12 @@
       <groupId>com.google.api.grpc</groupId>
       <artifactId>grpc-google-cloud-spanner-admin-instance-v1</artifactId>
     </dependency>
+    <!-- {x-generated-grpc-dependencies-start} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>grpc-google-cloud-spanner-v1</artifactId>
     </dependency>
+    <!-- {x-generated-grpc-dependencies-end} -->
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>grpc-google-cloud-spanner-admin-database-v1</artifactId>
