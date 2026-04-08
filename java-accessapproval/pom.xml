@@ -26,6 +26,7 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- {x-generated-dependencies-start} -->
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-accessapproval-v1</artifactId>
@@ -41,16 +42,19 @@
         <artifactId>google-cloud-accessapproval</artifactId>
         <version>2.90.0-SNAPSHOT</version><!-- {x-version-update:google-cloud-accessapproval:current} -->
       </dependency>
+      <!-- {x-generated-dependencies-end} -->
 
       <!-- Test dependencies -->
     </dependencies>
   </dependencyManagement>
 
   <modules>
+    <!-- {x-generated-modules-start} -->
     <module>google-cloud-accessapproval</module>
     <module>grpc-google-cloud-accessapproval-v1</module>
     <module>proto-google-cloud-accessapproval-v1</module>
     <module>google-cloud-accessapproval-bom</module>
+    <!-- {x-generated-modules-end} -->
   </modules>
 
   </project>

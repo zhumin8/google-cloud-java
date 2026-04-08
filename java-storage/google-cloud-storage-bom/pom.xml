@@ -66,15 +66,11 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- {x-generated-dependencies-start} -->
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-storage</artifactId>
         <version>2.64.2-SNAPSHOT</version><!-- {x-version-update:google-cloud-storage:current} -->
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>gapic-google-cloud-storage-v2</artifactId>
-        <version>2.64.2-SNAPSHOT</version><!-- {x-version-update:gapic-google-cloud-storage-v2:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -85,6 +81,12 @@
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-storage-v2</artifactId>
         <version>2.64.2-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-storage-v2:current} -->
+      </dependency>
+      <!-- {x-generated-dependencies-end} -->
+      <dependency>
+        <groupId>com.google.api.grpc</groupId>
+        <artifactId>gapic-google-cloud-storage-v2</artifactId>
+        <version>2.64.2-SNAPSHOT</version><!-- {x-version-update:gapic-google-cloud-storage-v2:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
