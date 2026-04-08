@@ -74,6 +74,7 @@
         <artifactId>grpc-google-cloud-spanner-executor-v1</artifactId>
         <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-spanner-executor-v1:current} -->
       </dependency>
+      <!-- {x-generated-dependencies-start} -->
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-spanner-v1</artifactId>
@@ -81,13 +82,19 @@
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
-        <artifactId>proto-google-cloud-spanner-admin-database-v1</artifactId>
-        <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-spanner-admin-database-v1:current} -->
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-spanner-v1</artifactId>
         <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-spanner-v1:current} -->
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-spanner</artifactId>
+        <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-spanner:current} -->
+      </dependency>
+      <!-- {x-generated-dependencies-end} -->
+      <dependency>
+        <groupId>com.google.api.grpc</groupId>
+        <artifactId>proto-google-cloud-spanner-admin-database-v1</artifactId>
+        <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-spanner-admin-database-v1:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -98,11 +105,6 @@
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-spanner-admin-database-v1</artifactId>
         <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-spanner-admin-database-v1:current} -->
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-spanner</artifactId>
-        <version>6.113.1-SNAPSHOT</version><!-- {x-version-update:google-cloud-spanner:current} -->
       </dependency>
 
       <dependency>
@@ -121,17 +123,19 @@
   </dependencyManagement>
 
   <modules>
+    <!-- {x-generated-modules-start} -->
     <module>google-cloud-spanner</module>
     <module>grpc-google-cloud-spanner-v1</module>
+    <module>proto-google-cloud-spanner-v1</module>
+    <module>google-cloud-spanner-bom</module>
+    <!-- {x-generated-modules-end} -->
     <module>grpc-google-cloud-spanner-admin-instance-v1</module>
     <module>grpc-google-cloud-spanner-admin-database-v1</module>
     <module>grpc-google-cloud-spanner-executor-v1</module>
     <module>proto-google-cloud-spanner-admin-instance-v1</module>
-    <module>proto-google-cloud-spanner-v1</module>
     <module>proto-google-cloud-spanner-admin-database-v1</module>
     <module>proto-google-cloud-spanner-executor-v1</module>
     <module>google-cloud-spanner-executor</module>
-    <module>google-cloud-spanner-bom</module>
   </modules>
 
   <build>

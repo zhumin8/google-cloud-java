@@ -26,6 +26,7 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- {x-generated-dependencies-start} -->
       <dependency>
         <groupId>com.google.shopping</groupId>
         <artifactId>google-shopping-merchant-productstudio</artifactId>
@@ -41,15 +42,18 @@
         <artifactId>proto-google-shopping-merchant-productstudio-v1alpha</artifactId>
         <version>0.29.0-SNAPSHOT</version><!-- {x-version-update:proto-google-shopping-merchant-productstudio-v1alpha:current} -->
       </dependency>
+      <!-- {x-generated-dependencies-end} -->
 
     </dependencies>
   </dependencyManagement>
 
   <modules>
+    <!-- {x-generated-modules-start} -->
     <module>google-shopping-merchant-productstudio</module>
     <module>grpc-google-shopping-merchant-productstudio-v1alpha</module>
     <module>proto-google-shopping-merchant-productstudio-v1alpha</module>
     <module>google-shopping-merchant-productstudio-bom</module>
+    <!-- {x-generated-modules-end} -->
   </modules>
 
   </project>
