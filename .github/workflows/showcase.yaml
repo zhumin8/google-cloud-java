@@ -118,18 +118,17 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: 'stable'
-      - name: Install Librarian
-        run: |
-          V=$(go run github.com/googleapis/librarian/cmd/librarian@latest config get version)
-          echo "Installing librarian version $V"
-          go install github.com/googleapis/librarian/cmd/librarian@$V
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run librarian install
+      - name: Install protoc
         run: |
-          librarian install
-          echo "$HOME/.cache/librarian/bin/java_tools/bin" >> $GITHUB_PATH
+          set -e
+          VERSION="33.2"
+          curl -fsSL --retry 5 --retry-delay 15 -o /tmp/protoc.zip "https://github.com/protocolbuffers/protobuf/releases/download/v$VERSION/protoc-$VERSION-linux-x86_64.zip"
+          cd /usr/local
+          sudo unzip -o /tmp/protoc.zip
+          protoc --version
       - name: Showcase golden tests
         working-directory: java-showcase
         run: |

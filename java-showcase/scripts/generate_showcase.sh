@@ -18,6 +18,15 @@ run_librarian() {
   go run "github.com/googleapis/librarian/cmd/librarian@${LIBRARIAN_VERSION}" "$@"
 }
 
+# Ensure Librarian's tools (gapic generator, formatters, synthtool) are installed.
+# We run this in the repo root where librarian.yaml is located.
+pushd "${ROOT_DIR}"
+run_librarian install
+popd
+
+# Add the installed tools to PATH so Librarian's generate step can find them
+export PATH="$HOME/.cache/librarian/bin/java_tools/bin:$PATH"
+
 replace="false"
 if [[ "$1" == "--replace" ]]; then
   replace="$2"
