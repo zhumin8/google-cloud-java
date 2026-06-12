@@ -7,7 +7,11 @@ the Showcase API which can communicate with a local Showcase server to perform i
 
 ## Requirements
 
-* Install [Go](https://go.dev) in your `PATH`.
+*   Install [Go](https://go.dev) in your `PATH` (required for all tests).
+*   **Python 3** in your `PATH` (required for Golden tests).
+*   **protoc** in your `PATH` (required for Golden tests).
+
+For the exact versions of Go, Python, and protoc used in CI, see [showcase.yaml](../.github/workflows/showcase.yaml).
 
 ## Installing the Server
 
@@ -73,7 +77,8 @@ mvn verify -P enable-integration-tests
 
 ## Running the Golden tests
 
-**NOTE** This requires Docker to be installed in your machine.
+**Prerequisites:** This requires **Go**, **Python 3**, and **protoc** to be installed on your machine (see [Requirements](#requirements)).
+
 Open a new terminal window in the root project directory.
 
 ```shell
@@ -84,7 +89,8 @@ mvn verify -P enable-golden-tests
 
 ## Update the Golden Showcase Files
 
-**NOTE** This requires Docker to be installed in your machine.
+**Prerequisites:** This requires **Go**, **Python 3**, and **protoc** to be installed on your machine (see [Requirements](#requirements)).
+
 Open a new terminal window in the root project directory.
 
 ```shell
